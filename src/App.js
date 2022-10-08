@@ -1,8 +1,8 @@
-import HomePage from "./pages/HomePage";
+import Tag from './components/Tag';
 function App() {
   return (
     <div>
-      <HomePage/>
+      <Tag nom='Hello'/>
     </div>
   );
 }
