@@ -1,7 +1,7 @@
 .kasa-thumb {
+    width: 340px;
+    height:340px;
     border-radius: 10px;
-    height: 100%;
-    min-height: 340px;
     position: relative;
 }
 .kasa-thumb:hover {

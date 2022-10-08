@@ -1,12 +1,11 @@
-import BannerImage from '../assets/BannerImage.png';
 import '../styles/Banner.css';
 
-function Banner() {
+function Banner({image, text}) {
   return (
     <div className='kasa-banner'>
-      <img className='banner-img' src={BannerImage} alt='Banner' />
+      <img className='banner-img' src={image} alt='Banner' />
       <div className='banner-dark'></div>
-      <span className='banner-txt'>Chez vous, partout et ailleurs</span>
+      <span className='banner-txt'>{text}</span>
     </div>
   );
 }

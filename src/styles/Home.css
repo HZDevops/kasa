@@ -1,0 +1,23 @@
+.kasa-banner {
+    top: 171px;
+    left: 20px;
+}
+
+.accomodation-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #f6f6f6;
+    border-radius: 25px;
+    padding: 55px 50px;
+    position: relative;
+    top: 170px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.kasa-thumb {
+    margin-bottom: 50px;
+}
+
+

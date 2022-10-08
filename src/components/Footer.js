@@ -1,12 +1,13 @@
 import FooterLogo from '../assets/FooterLogo.png';
+import '../styles/Footer.css';
 
 function Footer() {
   return (
     <footer className='kasa-footer'>
-      <div className='footer-container'>
+     
         <img src={FooterLogo} alt='Logo footer' />
         <p>&copy; 2022 Kasa. Tous droits réservés</p>
-      </div>
+    
     </footer>
   );
 }
