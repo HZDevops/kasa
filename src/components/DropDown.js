@@ -4,7 +4,6 @@ import ArrowUp from '../assets/ArrowUp.png';
 import ArrowDown from '../assets/ArrowDown.png'
 
 function DropDown({ title, description }) {
- 
   const [isOpen, setIsOpen] = useState(true);
 
   return isOpen ? (

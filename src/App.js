@@ -1,10 +1,10 @@
-import DropDown from './components/DropDown.js';
+import RoutesPath from './routes/RoutesPath';
 import './App.css';
 
 function App() {
   return (
     <div>
-      <DropDown title='Hello' description='Hi!'/>
+      <RoutesPath/>
     </div>
   );
 }

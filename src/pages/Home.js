@@ -1,5 +1,5 @@
-import Banner from './Banner';
-import Thumb from './Thumb';
+import Banner from '../components/Banner';
+import Thumb from '../components/Thumb';
 import '../styles/Home.css';
 import BannerImage from '../assets/BannerImage.png';
 import AccomodationList from '../data/logements.json';
