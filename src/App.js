@@ -1,8 +1,10 @@
-import Tag from './components/Tag';
+import DropDown from './components/DropDown.js';
+import './App.css';
+
 function App() {
   return (
     <div>
-      <Tag nom='Hello'/>
+      <DropDown title='Hello' description='Hi!'/>
     </div>
   );
 }
