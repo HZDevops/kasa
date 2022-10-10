@@ -1,9 +1,9 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 function Layout({children}) {
   return (
-    <div className="my-layout">
+    <div className='kasa-layout'>
       <Header />
       <main>{children}</main>
       <Footer />
