@@ -4,10 +4,10 @@ import ArrowUp from '../assets/ArrowUp.png';
 import ArrowDown from '../assets/ArrowDown.png'
 
 function DropDown({ title, description }) {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   return isOpen ? (
-    <div className='kasa-dropdown' key={`dropdown-${title}`}>
+    <div className='kasa-dropdown' id={`dropdown-${title}`}>
         <div className='dropdown-header'>
             <div className='dropdown-title'>{title}</div>
             <a
@@ -21,7 +21,7 @@ function DropDown({ title, description }) {
         <div className='dropdown-description'>{description}</div>
     </div>
     ) : (
-    <div className='kasa-dropdown' key={`dropdown-${title}`}>
+    <div className='kasa-dropdown' id={`dropdown-${title}`}>
         <div className='dropdown-header'>
             <div className='dropdown-title'>{title}</div>
             <a

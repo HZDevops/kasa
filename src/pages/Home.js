@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import Banner from '../components/Banner';
 import Thumb from '../components/Thumb';
 import '../styles/Home.css';
@@ -10,12 +11,14 @@ function Home() {
       <Banner image={BannerImage} text='Chez vous, partout et ailleurs' />
       <div className='accomodation-list'>
         {AccomodationList.map((accomodation) => (
-            <Thumb
-            key={accomodation.id}
-            id={accomodation.id}
-            image={accomodation.cover}
-            titre={accomodation.title}
-          />
+            <Link key={accomodation.id} to={'/accomodation/'+accomodation.id+'/#'}>
+              <Thumb
+                key={accomodation.id}
+                id={accomodation.id}
+                image={accomodation.cover}
+                titre={accomodation.title}
+              />
+            </Link>
         ))}
       </div>
     </div>
