@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Layout from './layouts/Layout';
 import Home from './pages/Home';
-import Accomodation from './pages/Accomodation';
+import AccomodationForm from './pages/AccomodationForm';
 import About from './pages/About';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
@@ -15,7 +15,7 @@ root.render(
       <Layout>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route path='/accomodation/:id' element={<Accomodation />}/>
+          <Route path='/accomodation/:id' element={<AccomodationForm />}/>
           <Route path='/about' element={<About />}/>
         </Routes>
       </Layout>

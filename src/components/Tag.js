@@ -1,7 +1,7 @@
 import '../styles/Tag.css';
 
-function Tag({ nom }) {
-  return <span className='kasa-tag'>{nom}</span>;
+function Tag({ text }) {
+  return <span className='kasa-tag'>{text}</span>;
 }
 
 export default Tag;

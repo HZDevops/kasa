@@ -1,9 +1,13 @@
 .kasa-dropdown {
-    width: auto;
+    width: 582px;
     height: 52px;
     border-radius: 10px;
     margin-bottom: 35px;
     text-align: left;
+}
+
+.large {
+  width:auto;
 }
 
 .dropdown-header {
