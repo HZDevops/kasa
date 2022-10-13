@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
 import AccomodationList from '../data/logements.json';
+import Carousel from '../components/Carousel';
 import Tag from '../components/Tag';
 import DropDown from '../components/DropDown';
 
@@ -16,7 +17,7 @@ function AccomodationForm() {
     return (
         <div className='kasa-accomodation'>
             <div className='accomodation-header'>
-                <img src={accomodationSearched.cover} alt='accomodation'/>
+                <Carousel images={accomodationSearched.pictures}/>
                 <h1>{accomodationSearched.title}</h1>
                 <h2>{accomodationSearched.location}</h2>
                 {tags.map((tag,index) => (
