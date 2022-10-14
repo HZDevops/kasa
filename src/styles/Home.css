@@ -1,5 +1,13 @@
+.about-link {
+    text-decoration: none;
+}
+
+main {
+    margin-top:20px;
+}
+
 .kasa-banner {
-    top: 171px;
+    top:50px;
     left: 20px;
 }
 

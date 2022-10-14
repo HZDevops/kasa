@@ -1,17 +1,14 @@
 .kasa-carousel {
-    display: block;
+    width: 1240px;
     height: 415px;
     margin: auto auto 30px auto;
     position: relative;
-    width: 100%;
 }
 
 .arrow {
-    position: absolute;
     width: 46px;
     height: 79px;
-    border-radius: 0px;
-    z-index: 1;
+    position: absolute;
 }
 
 .arrow:hover {

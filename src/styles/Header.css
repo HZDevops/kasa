@@ -8,17 +8,23 @@
 .kasa-logo {
     width: 210.32px;
     height: 68px;
-    margin-left: 100px;
-    margin-top: 40px;
+    margin-left: 20px;
+    margin-top: 25px;
 }
 
 .kasa-navbar {
     width: 309px;
     height: 34px;
-    align-self: last baseline;
+    align-self: baseline;
+    padding-top: 50px;
 }
 
 .kasa-navbar a {
-    padding-left: 80px;
+    padding-left: 57px;
     color: #FF6060;
+}
+
+.home-link {
+    padding-left: 85px;
+    padding-right: 57px;
 }

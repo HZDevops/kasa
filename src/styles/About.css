@@ -1,3 +1,7 @@
+.home-link {
+    text-decoration: none;
+}
+
 .about-dropdown {
     width:1240px;
     position: relative;

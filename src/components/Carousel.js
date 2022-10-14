@@ -37,9 +37,9 @@ function Carousel({images}) {
             {
                 images.map((image, index) => (
                     index===imageDisplayed ? (
-                        <img key={index} className='carousel-image displayed' src={image} alt='Location'/>
+                        <img key={index} className='carousel-image displayed' src={image} alt='Accomodation'/>
                         ) : (
-                        <img key={index} className='carousel-image' src={image} alt='Location'/>
+                        <img key={index} className='carousel-image' src={image} alt='Accomodation'/>
                         )
                 ))
             }
