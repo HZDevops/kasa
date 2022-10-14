@@ -1,0 +1,56 @@
+.accomodation-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+h1, h2 {
+    color: #FF6060;
+    font-weight: normal;
+    margin-left: 20px;
+}
+
+.accomodation-host {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.accomodation-host img {
+    border-radius: 50%;
+    height: 64px;
+    object-fit: cover;
+    width: 64px;
+}
+
+.accomodation-host span {
+    width: 93px;
+    align-items: center;
+    display: flex;
+    margin-bottom: 75px;
+    margin-right: 10px;
+    color: #FF6060;
+    text-align: right;
+}
+
+.accomodation-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+#dropdown-Description {
+      margin-left: 10px;
+}
+
+#dropdown-Equipements {
+    margin-right: 20px;;
+}
+
+.dropdown-description {
+    line-height: 25.67px;
+    font-weight: 400;
+}
+
+li {
+    list-style-type: none;
+}
