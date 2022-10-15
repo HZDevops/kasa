@@ -5,7 +5,7 @@ function Banner({image, text}) {
     <div className='kasa-banner'>
       <img className='banner-img' src={image} alt='Banner' />
       <div className='banner-dark'></div>
-      <span className='banner-txt'>{text}</span>
+      <p className='banner-txt'>{text}</p>
     </div>
   );
 }
