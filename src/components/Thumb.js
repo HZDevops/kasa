@@ -5,7 +5,7 @@ function Thumb({ id, image, title }) {
     <div className='kasa-thumb' id={id}>
       <img className='thumb-image' src={image} alt='Thumb' />
       <div className='thumb-dark'></div>
-      <span className='thumb-titre'>{title}</span>
+      <span className='thumb-title'>{title}</span>
     </div>
   );
 }

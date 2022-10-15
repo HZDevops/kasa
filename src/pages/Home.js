@@ -16,7 +16,7 @@ function Home() {
                 key={accomodation.id}
                 id={accomodation.id}
                 image={accomodation.cover}
-                titre={accomodation.title}
+                title={accomodation.title}
               />
             </Link>
         ))}

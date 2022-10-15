@@ -2,9 +2,17 @@
     text-decoration: none;
 }
 
+.kasa-dropdown {
+    width:1023px;
+}
+
+.dropdown-description {
+    height: 146px;
+}
+
 .about-dropdown {
     width:1240px;
     position: relative;
-    top: 180px;
-    margin-left: 20px;
+    top: 50px;
+    margin-left: 100px;
 }
