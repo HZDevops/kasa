@@ -2,16 +2,16 @@
     text-decoration: none;
 }
 
-.about-dropdown {
-    width:1023px;
-}
 
 .dropdown-description {
     height: 146px;
 }
 
 .about-dropdown {
-    width:1240px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width:1023px;
     position: relative;
     top: 50px;
     margin-left: 100px;

@@ -13,7 +13,7 @@ function DropDown({ title, description }) {
             <a
                 className='dropdown-arrow'
                 href={`#dropdown-${title}`}
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(false) }
             >
                 <img src={ArrowUp} alt='dropdown open' />
             </a>

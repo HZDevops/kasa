@@ -28,4 +28,23 @@ main {
     margin-bottom: 50px;
 }
 
+@media screen  and (max-width: 1490px) {
+    .kasa-home > .kasa-banner {
+        width: auto;
+        height: 110px;
+        left: 0;
+        margin: 20px;
+    }
 
+    .kasa-banner p {
+        font-size: 24px;
+        margin-left: 25px;
+        left:0;
+    }
+
+    .accomodation-list {
+        background-color: unset;
+        justify-content: center;
+        padding: 0;
+    }
+}
