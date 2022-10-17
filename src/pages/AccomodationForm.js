@@ -4,19 +4,42 @@ import Carousel from '../components/Carousel';
 import Tag from '../components/Tag';
 import DropDown from '../components/DropDown';
 import '../styles/AccomodationForm.css';
+import fullStar from '../assets/fullStar.png';
+import star from '../assets/star.png';
 
 function AccomodationForm() {
 
     //Get Accomodation id from URL
     const { id } = useParams();
 
+    //Get Accomodation Form from database
     const accomodationSearched = AccomodationList.find((accomodation)=> accomodation.id===id);
 
-    const tags = accomodationSearched.tags
-    const host = accomodationSearched.host
+    //Get tags from accomodation selected
+    const tags = accomodationSearched.tags;
+
+    //Get host details from accomodation selected
+    const host = accomodationSearched.host;
+
+    //Get rating note of the accomodation
+    let accomodationRate = [];
+    let fullStarRate = true;
+
+    for (let index = 0; index < 5; index++) {
+        if(index === parseInt(accomodationSearched?.rating)) {
+            fullStarRate = false;
+        }
+        if(fullStarRate === true) {
+            accomodationRate.push(<img key={index} src={fullStar} alt={`${accomodationSearched.rating}/5`}/>)
+        } else {
+            accomodationRate.push(<img key={index} src={star} alt={`${accomodationSearched.rating}/5`}/>)
+        }
+    }
+
+    //Get equipments list of the accomodation
     const equipments = accomodationSearched.equipments.map((equipment, index) => {
         return <li key={index}>{equipment}</li>
-    })
+    });
 
     return (
         <div className='kasa-accomodation'>
@@ -27,11 +50,14 @@ function AccomodationForm() {
                     <h2>{accomodationSearched.location}</h2>
                     {tags.map((tag,index) => (
                     <Tag key={`${tag}-${index}`} text={tag}/>))}
+                    
                 </div>
                 <div className='accomodation-host'>
                     <span>{host.name}</span>
-                    <img src={host.picture} alt='Host'/>
+                    <img className='host-picture' src={host.picture} alt='Host'/>
+                    <div className='host-rating'>{accomodationRate}</div>
                 </div>
+               
             </div>
             <div className='accomodation-details'>
                 <DropDown title={'Description'} description={accomodationSearched.description}/>

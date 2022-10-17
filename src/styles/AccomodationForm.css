@@ -21,26 +21,31 @@ h1, h2 {
 }
 
 .accomodation-host {
+    width: 200px;
     display: flex;
-    justify-content: space-between;
-    margin-right: 20px;
+    flex-wrap: wrap;
 }
 
-.accomodation-host img {
-    border-radius: 50%;
-    height: 64px;
-    object-fit: cover;
+.host-rating {
+    width:196px;
+    height: 36px;
+    margin-left: 25px;
+}
+
+.host-picture {
     width: 64px;
+    height: 64px;
+    border-radius: 50%;
 }
 
 .accomodation-host span {
+    display: flex;
     width: 93px;
     align-items: center;
-    display: flex;
-    margin-bottom: 75px;
-    margin-right: 10px;
-    color: #FF6060;
     text-align: right;
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #FF6060;
 }
 
 .accomodation-details {
