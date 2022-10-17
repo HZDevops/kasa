@@ -4,6 +4,16 @@
     flex-wrap: wrap;
 }
 
+.image-number {
+    width: 24px;
+    height: 32px;
+    position: absolute;
+    bottom: 20px;
+    left: 620px;
+    color: white;
+
+}
+
 h1, h2 {
     color: #FF6060;
     font-weight: normal;
