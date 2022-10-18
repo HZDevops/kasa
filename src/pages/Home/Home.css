@@ -8,7 +8,6 @@ main {
 
 .kasa-banner {
     top:50px;
-    left: 20px;
 }
 
 .accomodation-list {
@@ -28,18 +27,16 @@ main {
     margin-bottom: 50px;
 }
 
-@media screen  and (max-width: 728px) {
-    .kasa-home > .kasa-banner {
-        width: auto;
+@media screen  and (max-width: 718px) {
+    .kasa-banner {
         height: 110px;
         left: 0;
         margin: 20px;
     }
 
-    .kasa-banner p {
+    .banner-txt {
         font-size: 24px;
-        margin-left: 25px;
-        left:0;
+        margin-left: 0;
     }
 
     .accomodation-list {

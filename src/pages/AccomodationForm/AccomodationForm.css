@@ -54,11 +54,13 @@ h1, h2 {
 }
 
 #dropdown-Description {
-      margin-left: 10px;
+    width: 582px;
+    margin-left: 10px;
 }
 
 #dropdown-Equipements {
-    margin-right: 20px;;
+    width: 582px;
+    margin-right: 20px;
 }
 
 .dropdown-description {

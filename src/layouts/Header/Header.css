@@ -1,19 +1,20 @@
 .kasa-header {
     display: flex;
     justify-content: space-between;
-    width: 1240px;
+    width: auto;
     height: 68px;
     margin-left: 20px;
+    margin-right: 20px;
 }
 
 .kasa-logo {
-    width: 210.32px;
+    width: auto;
     height: 68px;
     margin-top: 25px;
 }
 
 .kasa-navbar {
-    width: 309px;
+    width: auto;
     height: 34px;
     align-self: baseline;
     padding-top: 50px;
@@ -28,4 +29,14 @@
     padding-left: 85px;
     padding-right: 20px;
     margin-left: 23px;
+}
+
+@media screen  and (max-width: 506px) {
+    .kasa-logo {
+        width: 147px;
+    }
+
+    .kasa-navbar a {
+        padding-left: 0;
+    }
 }

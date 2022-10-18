@@ -1,15 +1,14 @@
 .kasa-banner {
-    border-radius: 25px;
-    width: 1240px;
+    width: auto;
     height: 223px;
-    margin-bottom: 35px;
+    margin:20px;
     position: relative;
+    border-radius: 25px;
 }
 
 .banner-img {
     border-radius: 25px;
     height: 100%;
-    object-fit: cover;
     width: 100%;
 }
 
@@ -27,7 +26,8 @@
 .banner-txt {
   color: #ffffff;
   font-size: 48px;
-  left: 24%;
   position: absolute;
-  top: 35%;
+  left: 20%;
+  top: 37.5%;
+  margin-left: 25px;
 }
