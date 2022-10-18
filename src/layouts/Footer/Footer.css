@@ -1,6 +1,6 @@
 .kasa-footer {
   background: #000000;
-  width:1440px;
+  width:auto;
   height: 200px;
   position: relative;
   top:1000px;
@@ -16,13 +16,11 @@
 .kasa-footer img {
   display: block;
   margin: auto;
-  padding-right: 150px;
   padding-top: 66px;
 }
 
 .kasa-footer p {
   color: #ffffff;
   text-align: center;
-  padding-right: 150px;
   padding-top: 20px;
 }
