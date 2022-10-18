@@ -1,7 +1,7 @@
 import {useState} from 'react';
-import '../styles/DropDown.css';
-import ArrowUp from '../assets/ArrowUp.png';
-import ArrowDown from '../assets/ArrowDown.png'
+import './DropDown.css';
+import ArrowUp from '../../assets/ArrowUp.png';
+import ArrowDown from '../../assets/ArrowDown.png'
 
 function DropDown({ title, description }) {
   const [isOpen, setIsOpen] = useState(false);

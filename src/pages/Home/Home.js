@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import Banner from '../components/Banner';
-import Thumb from '../components/Thumb';
-import '../styles/Home.css';
-import BannerImage from '../assets/BannerImage.png';
-import AccomodationList from '../data/logements.json';
+import Banner from '../../components/Banner/Banner';
+import Thumb from '../../components/Thumb/Thumb';
+import './Home.css';
+import BannerImage from '../../assets/BannerImage.png';
+import AccomodationList from '../../data/logements.json';
 
 function Home() {
   return (

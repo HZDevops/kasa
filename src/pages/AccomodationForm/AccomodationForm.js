@@ -1,11 +1,11 @@
 import { useParams } from 'react-router-dom';
-import AccomodationList from '../data/logements.json';
-import Carousel from '../components/Carousel';
-import Tag from '../components/Tag';
-import DropDown from '../components/DropDown';
-import '../styles/AccomodationForm.css';
-import fullStar from '../assets/fullStar.png';
-import star from '../assets/star.png';
+import AccomodationList from '../../data/logements.json';
+import Carousel from '../../components/Carousel/Carousel';
+import Tag from '../../components/Tag/Tag';
+import DropDown from '../../components/DropDown/DropDown';
+import './AccomodationForm.css';
+import fullStar from '../../assets/fullStar.png';
+import star from '../../assets/star.png';
 
 function AccomodationForm() {
 

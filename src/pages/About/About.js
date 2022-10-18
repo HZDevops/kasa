@@ -1,7 +1,7 @@
-import '../styles/About.css';
-import Banner from '../components/Banner';
-import BannerImageAbout from '../assets/BannerImageAbout.png'
-import DropDown from '../components/DropDown';
+import './About.css';
+import Banner from '../../components/Banner/Banner';
+import BannerImageAbout from '../../assets/BannerImageAbout.png'
+import DropDown from '../../components/DropDown/DropDown';
 
 function About() {
     return(
