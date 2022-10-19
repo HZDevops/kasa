@@ -2,17 +2,12 @@
     text-decoration: none;
 }
 
-
-.dropdown-description {
-    height: 146px;
-}
-
 .about-dropdown {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width:1023px;
+    width:auto;
     position: relative;
     top: 50px;
-    margin-left: 100px;
+    margin: 100px;
 }

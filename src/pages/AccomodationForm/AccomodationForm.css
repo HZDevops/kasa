@@ -9,7 +9,7 @@
     height: 32px;
     position: absolute;
     bottom: 20px;
-    left: 620px;
+    left: 50%;
     color: white;
 
 }
@@ -51,16 +51,12 @@ h1, h2 {
 .accomodation-details {
     display: flex;
     justify-content: space-between;
+    margin: 10px;
 }
 
-#dropdown-Description {
-    width: 582px;
-    margin-left: 10px;
-}
-
-#dropdown-Equipements {
-    width: 582px;
-    margin-right: 20px;
+#dropdown-Description,#dropdown-Equipements  {
+    width: 45%;
+    margin-left: 20px;
 }
 
 .dropdown-description {
@@ -70,4 +66,37 @@ h1, h2 {
 
 li {
     list-style-type: none;
+}
+
+
+@media screen  and (max-width: 943px) {
+    .accomodation-location h1{
+        font-size: 18px;
+    }
+
+    .accomodation-location h2{
+        font-size: 14px;
+        margin-top: 5px;
+    }
+
+    .host-rating {
+        width:98px;
+    }
+
+    .host-rating img {
+        width:15px;
+    }
+
+    .accomodation-details {
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
+
+    #dropdown-Equipements {
+        width: 100%;
+    }
+
+    #dropdown-Description {
+        width: 100%;
+    }
 }

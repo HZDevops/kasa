@@ -38,7 +38,7 @@
 }
 
 .dropdown-description {
-    height: 249px;
+    height: auto;
     color: #ff6060;
     margin-top: -10px;
     padding: 25px 10px 10px 10px;
