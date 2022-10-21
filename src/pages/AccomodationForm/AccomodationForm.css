@@ -51,7 +51,6 @@ h1, h2 {
 .accomodation-details {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
 }
 
 #dropdown-Description,#dropdown-Equipements  {

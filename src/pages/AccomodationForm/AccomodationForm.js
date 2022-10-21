@@ -44,7 +44,7 @@ function AccomodationForm() {
     return (
         <div className='kasa-accomodation'>
             <div className='accomodation-header'>
-                <Carousel key={accomodationSearched.pictures} images={accomodationSearched.pictures}/>
+                <Carousel images={accomodationSearched.pictures}/>
                 <div className='accomodation-location'>
                     <h1>{accomodationSearched.title}</h1>
                     <h2>{accomodationSearched.location}</h2>

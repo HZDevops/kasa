@@ -37,12 +37,12 @@ function Carousel({images}) {
             {
                 images.map((image, index) => (
                     index===imageDisplayed ? (
-                        <div>
+                        <div key={index}>
                             <img key={index} className='carousel-image displayed' src={image} alt='Accomodation'/>
                             <span key={`image-${index}`} className='image-number'>{`${index+1}/${imagesNumber}`}</span>
                         </div>
                         ) : (
-                        <img key={index} className='carousel-image' src={image} alt='Accomodation'/>
+                        <img key={`${image}-${index}`} className='carousel-image' src={image} alt='Accomodation'/>
                         )
                 ))
             }
