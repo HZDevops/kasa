@@ -12,7 +12,7 @@
 }
 
 .error-description {
-    width:872px;
+    width:auto;
     height: 51px;
     color: #ff6060;
     display: block;
@@ -26,4 +26,20 @@
     display: block;
     color: #ff6060;
     margin-top: 150px;
+}
+
+@media screen  and (max-width: 718px) {
+    .error-title {
+        width:198px;
+        height: 99px;
+        font-size: 96px;
+    }
+
+    .error-description {
+        font-size: 18px;
+    }
+
+    .error-link {
+        font-size:14px;
+    }
 }
