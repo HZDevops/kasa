@@ -53,8 +53,10 @@ function AccomodationForm() {
                     
                 </div>
                 <div className='accomodation-host'>
-                    <span>{host.name}</span>
-                    <img className='host-picture' src={host.picture} alt='Host'/>
+                    <div className='host-details'>
+                        <span>{host.name}</span>
+                        <img className='host-picture' src={host.picture} alt='Host'/>
+                    </div>
                     <div className='host-rating'>{accomodationRate}</div>
                 </div>
                

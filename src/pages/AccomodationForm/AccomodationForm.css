@@ -21,15 +21,18 @@ h1, h2 {
 }
 
 .accomodation-host {
-    width: 200px;
+    width:200px;
+}
+
+.host-details {
     display: flex;
-    flex-wrap: wrap;
 }
 
 .host-rating {
     width:196px;
     height: 36px;
     margin-left: 25px;
+    margin-top: 21px;
 }
 
 .host-picture {
@@ -38,7 +41,7 @@ h1, h2 {
     border-radius: 50%;
 }
 
-.accomodation-host span {
+.host-details span {
     display: flex;
     width: 93px;
     align-items: center;
@@ -78,13 +81,13 @@ li {
         margin-top: 5px;
     }
 
-    .host-rating {
+    /*.host-rating {
         width:98px;
     }
 
     .host-rating img {
         width:15px;
-    }
+    }*/
 
     .accomodation-details {
         flex-wrap: wrap;
@@ -98,4 +101,40 @@ li {
     #dropdown-Description {
         width: 100%;
     }
+}
+
+@media screen  and (max-width: 718px) {
+   
+    .host-details span {
+        font-size: 12px;
+    }
+
+    .host-rating {
+        margin-left: 10px;
+    }
+
+    .host-rating img {
+        width:15px;
+    }
+}
+
+@media screen  and (max-width: 550px) {
+    
+    .accomodation-host {
+        width: 300px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+
+    }
+   
+    .host-details {
+        grid-column: 2;
+    }
+
+    .host-rating {
+        grid-column: 1;
+        margin-top: 0;
+    }
+
 }
