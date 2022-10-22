@@ -20,14 +20,9 @@
     padding-top: 50px;
 }
 
-.kasa-navbar a {
-    text-decoration: none;
+.home-link, .about-link {
     padding-left: 57px;
     color: #FF6060;
-}
-
-.kasa-navbar a:hover {
-    text-decoration: underline;
 }
 
 .home-link {
@@ -35,6 +30,7 @@
     padding-right: 20px;
     margin-left: 23px;
 }
+
 
 @media screen  and (max-width: 506px) {
     .kasa-logo {

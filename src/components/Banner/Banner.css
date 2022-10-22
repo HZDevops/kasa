@@ -31,3 +31,16 @@
   top: 37.5%;
   margin-left: 25px;
 }
+
+@media screen  and (max-width: 718px) {
+ .kasa-banner {
+        height: 110px;
+        left: 0;
+        margin: 20px;
+    }
+
+    .banner-txt {
+        font-size: 24px;
+        margin-left: 0;
+    }
+}

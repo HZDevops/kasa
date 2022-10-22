@@ -52,6 +52,7 @@ h1, h2 {
 }
 
 .accomodation-details {
+    width:auto;
     display: flex;
     justify-content: space-between;
 }
@@ -70,7 +71,6 @@ li {
     list-style-type: none;
 }
 
-
 @media screen  and (max-width: 943px) {
     .accomodation-location h1{
         font-size: 18px;
@@ -79,19 +79,6 @@ li {
     .accomodation-location h2{
         font-size: 14px;
         margin-top: 5px;
-    }
-
-    /*.host-rating {
-        width:98px;
-    }
-
-    .host-rating img {
-        width:15px;
-    }*/
-
-    .accomodation-details {
-        flex-wrap: wrap;
-        font-size: 13px;
     }
 
     #dropdown-Equipements {
@@ -119,21 +106,21 @@ li {
 }
 
 @media screen  and (max-width: 550px) {
+
+    .accomodation-details {
+        flex-wrap: wrap;
+        font-size: 13px;
+    }
     
     .accomodation-host {
         width: 500px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: end;
     }
    
-    .host-details {
-        grid-column: 3;
-    }
-
     .host-rating {
-        grid-column: 1;
         margin-top: 0;
         margin-left: 20px;
     }
