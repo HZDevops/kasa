@@ -121,20 +121,21 @@ li {
 @media screen  and (max-width: 550px) {
     
     .accomodation-host {
-        width: 300px;
+        width: 500px;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
 
     }
    
     .host-details {
-        grid-column: 2;
+        grid-column: 3;
     }
 
     .host-rating {
         grid-column: 1;
         margin-top: 0;
+        margin-left: 20px;
     }
 
 }

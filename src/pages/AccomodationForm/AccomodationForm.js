@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import AccomodationList from '../../data/logements.json';
 import Carousel from '../../components/Carousel/Carousel';
 import Tag from '../../components/Tag/Tag';
@@ -16,10 +16,10 @@ function AccomodationForm() {
     const accomodationSearched = AccomodationList.find((accomodation)=> accomodation.id===id);
 
     //Get tags from accomodation selected
-    const tags = accomodationSearched.tags;
+    const tags = accomodationSearched?.tags;
 
     //Get host details from accomodation selected
-    const host = accomodationSearched.host;
+    const host = accomodationSearched?.host;
 
     //Get rating note of the accomodation
     let accomodationRate = [];
@@ -30,24 +30,24 @@ function AccomodationForm() {
             fullStarRate = false;
         }
         if(fullStarRate === true) {
-            accomodationRate.push(<img key={index} src={fullStar} alt={`${accomodationSearched.rating}/5`}/>)
+            accomodationRate.push(<img key={index} src={fullStar} alt={`${accomodationSearched?.rating}/5`}/>)
         } else {
-            accomodationRate.push(<img key={index} src={star} alt={`${accomodationSearched.rating}/5`}/>)
+            accomodationRate.push(<img key={index} src={star} alt={`${accomodationSearched?.rating}/5`}/>)
         }
     }
 
     //Get equipments list of the accomodation
-    const equipments = accomodationSearched.equipments.map((equipment, index) => {
+    const equipments = accomodationSearched?.equipments.map((equipment, index) => {
         return <li key={index}>{equipment}</li>
     });
-
-    return (
+    
+    return accomodationSearched ? (
         <div className='kasa-accomodation'>
             <div className='accomodation-header'>
-                <Carousel images={accomodationSearched.pictures}/>
+                <Carousel images={accomodationSearched?.pictures}/>
                 <div className='accomodation-location'>
-                    <h1>{accomodationSearched.title}</h1>
-                    <h2>{accomodationSearched.location}</h2>
+                    <h1>{accomodationSearched?.title}</h1>
+                    <h2>{accomodationSearched?.location}</h2>
                     {tags.map((tag,index) => (
                     <Tag key={`${tag}-${index}`} text={tag}/>))}
                     
@@ -62,10 +62,12 @@ function AccomodationForm() {
                
             </div>
             <div className='accomodation-details'>
-                <DropDown title={'Description'} description={accomodationSearched.description}/>
+                <DropDown title={'Description'} description={accomodationSearched?.description}/>
                 <DropDown title={'Equipements'} description={equipments}/>
             </div>
        </div>
-       );
+       ) : (
+       <Navigate to='*'/>
+    );
 }
 export default AccomodationForm;
