@@ -1,7 +1,7 @@
-import './Tag.css';
+import "./Tag.css";
 
 function Tag({ text }) {
-  return <span className='kasa-tag'>{text}</span>;
+  return <span className="kasa-tag">{text}</span>;
 }
 
 export default Tag;

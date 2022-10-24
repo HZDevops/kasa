@@ -1,11 +1,11 @@
-import './Banner.css';
+import "./Banner.css";
 
-function Banner({image, text}) {
+function Banner({ image, text }) {
   return (
-    <div className='kasa-banner'>
-      <img className='banner-img' src={image} alt='Banner' />
-      <div className='banner-dark'></div>
-      <p className='banner-txt'>{text}</p>
+    <div className="kasa-banner">
+      <img className="banner-img" src={image} alt="Banner" />
+      <div className="banner-dark"></div>
+      <p className="banner-txt">{text}</p>
     </div>
   );
 }

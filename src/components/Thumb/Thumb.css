@@ -1,9 +1,10 @@
 .kasa-thumb {
     width: 340px;
-    height:340px;
+    height: 340px;
     border-radius: 10px;
     position: relative;
 }
+
 .kasa-thumb:hover {
     background: linear-gradient(180deg, #ff6060 85%, #000000a6 100%);
     cursor: pointer;
@@ -15,7 +16,8 @@
     object-fit: cover;
     width: 100%;
 }
-.kasa-thumb:hover > .thumb-image {
+
+.kasa-thumb:hover>.thumb-image {
     opacity: 0.30;
 }
 
@@ -36,5 +38,5 @@
     font-size: 18px;
     left: 20px;
     position: absolute;
-    top:290px;
+    top: 290px;
 }

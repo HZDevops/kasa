@@ -14,14 +14,15 @@
 
 }
 
-h1, h2 {
+h1,
+h2 {
     color: #FF6060;
     font-weight: normal;
     margin-left: 20px;
 }
 
 .accomodation-host {
-    width:200px;
+    width: 200px;
 }
 
 .host-details {
@@ -29,7 +30,7 @@ h1, h2 {
 }
 
 .host-rating {
-    width:196px;
+    width: 196px;
     height: 36px;
     margin-left: 25px;
     margin-top: 21px;
@@ -52,12 +53,13 @@ h1, h2 {
 }
 
 .accomodation-details {
-    width:auto;
+    width: auto;
     display: flex;
     justify-content: space-between;
 }
 
-#dropdown-Description,#dropdown-Equipements  {
+#dropdown-Description,
+#dropdown-Equipements {
     width: 45%;
     margin-left: 20px;
 }
@@ -71,12 +73,12 @@ li {
     list-style-type: none;
 }
 
-@media screen  and (max-width: 943px) {
-    .accomodation-location h1{
+@media screen and (max-width: 943px) {
+    .accomodation-location h1 {
         font-size: 18px;
     }
 
-    .accomodation-location h2{
+    .accomodation-location h2 {
         font-size: 14px;
         margin-top: 5px;
     }
@@ -90,8 +92,8 @@ li {
     }
 }
 
-@media screen  and (max-width: 718px) {
-   
+@media screen and (max-width: 718px) {
+
     .host-details span {
         font-size: 12px;
     }
@@ -101,28 +103,27 @@ li {
     }
 
     .host-rating img {
-        width:15px;
+        width: 15px;
     }
 }
 
-@media screen  and (max-width: 550px) {
+@media screen and (max-width: 676px) {
 
     .accomodation-details {
         flex-wrap: wrap;
         font-size: 13px;
     }
-    
+
     .accomodation-host {
-        width: 500px;
+        width: 90%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
-        align-items: end;
+        align-items: flex-end;
     }
-   
+
     .host-rating {
         margin-top: 0;
         margin-left: 20px;
     }
-
 }

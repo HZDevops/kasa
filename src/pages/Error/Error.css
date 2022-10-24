@@ -4,7 +4,7 @@
 }
 
 .error-title {
-    width:597px;
+    width: 597px;
     height: 263px;
     color: #ff6060;
     font-size: 288px;
@@ -12,7 +12,7 @@
 }
 
 .error-description {
-    width:auto;
+    width: auto;
     height: 51px;
     color: #ff6060;
     display: block;
@@ -21,16 +21,15 @@
     padding-top: 66px;
 }
 
-
 .error-link {
     display: block;
     color: #ff6060;
     margin-top: 150px;
 }
 
-@media screen  and (max-width: 718px) {
+@media screen and (max-width: 718px) {
     .error-title {
-        width:198px;
+        width: 198px;
         height: 99px;
         font-size: 96px;
     }
@@ -40,6 +39,6 @@
     }
 
     .error-link {
-        font-size:14px;
+        font-size: 14px;
     }
 }
