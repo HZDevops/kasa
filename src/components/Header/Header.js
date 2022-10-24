@@ -9,23 +9,17 @@ function Header() {
       <nav className="kasa-navbar">
         <NavLink
           to="/"
-          className="kasa-link"
-          style={({ isActive }) =>
-            isActive
-              ? { textDecoration: "underline" }
-              : { textDecoration: "none" }
-          }
+          className={({ isActive }) => {
+            return isActive ? "active-link" : "inactive-link";
+          }}
         >
           Accueil
         </NavLink>
         <NavLink
           to="/about"
-          className="kasa-link"
-          style={({ isActive }) =>
-            isActive
-              ? { textDecoration: "underline" }
-              : { textDecoration: "none" }
-          }
+          className={({ isActive }) => {
+            return isActive ? "active-link" : "inactive-link";
+          }}
         >
           A Propos
         </NavLink>

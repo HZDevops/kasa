@@ -20,10 +20,19 @@
     padding-top: 50px;
 }
 
-.kasa-link {
-    text-decoration: none;
+.inactive-link,
+.active-link {
     padding-left: 57px;
     color: #FF6060;
+}
+
+.inactive-link {
+    text-decoration: none;
+}
+
+.active-link {
+    text-decoration: underline;
+
 }
 
 @media screen and (max-width: 506px) {
@@ -32,6 +41,6 @@
     }
 
     .kasa-navbar a {
-        padding-left: 0;
+        padding-left: 10px;
     }
 }
