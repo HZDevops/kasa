@@ -18,3 +18,24 @@ Site internet d'une société de location d'appartements entre particuliers dév
     - Utilisation du state dans les composants
     - Utilisation des listes en itérant dessus
     - Utilisation de React Router et logique du routeur implémenté dans un seul fichier
+
+## Comment lancer l'application en local :
+
+1- Cloner le projet et allez au repo cloné:
+
+$ git clone https://github.com/HZDevops/kasa.git
+
+
+2- Installer les dépendances du projet :
+
+```
+npm install
+```
+3- Lancer l'API :
+
+```
+yarn start
+```
+4- Accéder à l'API :
+
+L'api est accessible sur le port `3000` en local, c'est à dire `http://localhost:3000`
