@@ -25,6 +25,7 @@
     display: block;
     color: #ff6060;
     margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 @media screen and (max-width: 718px) {

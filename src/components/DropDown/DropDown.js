@@ -9,13 +9,12 @@ function DropDown({ title, description }) {
     <div className="kasa-dropdown" id={`dropdown-${title}`}>
       <div className="dropdown-header">
         <div className="dropdown-title">{title}</div>
-        <a
+        <div
           className={`dropdown-arrow ${isOpen}`}
-          href={`#dropdown-${title}`}
           onClick={() => setIsOpen(false)}
         >
           <img src={Arrow} alt="dropdown open" />
-        </a>
+        </div>
       </div>
       <div className="dropdown-description">{description}</div>
     </div>
@@ -23,32 +22,15 @@ function DropDown({ title, description }) {
     <div className="kasa-dropdown" id={`dropdown-${title}`}>
       <div className="dropdown-header">
         <div className="dropdown-title">{title}</div>
-        <a
+        <div
           className={`dropdown-arrow ${isOpen}`}
-          href={`#dropdown-${title}`}
           onClick={() => setIsOpen(true)}
         >
           <img src={Arrow} alt="dropdown close" />
-        </a>
+        </div>
       </div>
     </div>
   );
-
-  /*return (
-        <div className='kasa-dropdown' id={`dropdown-${title}`}>
-            <div className='dropdown-header'>
-                <div className='dropdown-title'>{title}</div>
-                <a
-                    className={`dropdown-arrow ${isOpen}`}
-                    href={`#dropdown-${title}`}
-                    onClick={() => setIsOpen(true)}
-                >
-                    <img src={Arrow} alt='dropdown open' />
-                </a>
-            </div>
-            { isOpen && <div className='dropdown-description'>{description}</div>}
-        </div>
-    );*/
 }
 
 export default DropDown;
