@@ -1,4 +1,6 @@
 .kasa-banner {
+    display: flex;
+    justify-content: center;
     width: auto;
     height: 223px;
     margin: 20px;
@@ -27,14 +29,7 @@
     color: #ffffff;
     font-size: 48px;
     position: absolute;
-    left: 25%;
     top: 37.5%;
-}
-
-@media screen and (max-width: 1050px) {
-    .banner-txt {
-      left:20%;
-    }
 }
 
 @media screen and (max-width: 718px) {
@@ -46,6 +41,5 @@
 
     .banner-txt {
         font-size: 24px;
-        left: 25%;
     }
 }
