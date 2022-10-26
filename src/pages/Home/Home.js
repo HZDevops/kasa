@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Banner from "../../components/Banner/Banner";
 import Thumb from "../../components/Thumb/Thumb";
 import "./Home.css";
@@ -11,7 +11,7 @@ function Home() {
       <Banner image={BannerImage} text="Chez vous, partout et ailleurs" />
       <div className="accomodation-list">
         {AccomodationList.map((accomodation) => (
-          <Link
+          <NavLink
             key={accomodation.id}
             to={"/accomodation/" + accomodation.id + "/#"}
           >
@@ -21,7 +21,7 @@ function Home() {
               image={accomodation.cover}
               title={accomodation.title}
             />
-          </Link>
+          </NavLink>
         ))}
       </div>
     </div>

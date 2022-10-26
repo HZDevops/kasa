@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Error.css";
 
 function Error() {
@@ -8,9 +8,9 @@ function Error() {
       <span className="error-description">
         Oups! La page que vous demandez n'existe pas.
       </span>
-      <Link to="/" className="error-link">
+      <NavLink to="/" className="error-link">
         Retourner sur la page d’accueil
-      </Link>
+      </NavLink>
     </div>
   );
 }
